@@ -28,7 +28,7 @@ sudo ln -s /usr/share/phpmyadmin /path/to/site
 ```
 Choose apache2 as the web server, and enter your root password for MySQL.
 
-3. Add the following lines to `/etc/apache2/sites-enabled/000-default.conf` to config the site.
+3. Add the following lines to `/etc/apache2/sites-enabled/000-default.conf` to configure the site.
 ```
 DocumentRoot /path/to/site
 <Directory /path/to/site/>
