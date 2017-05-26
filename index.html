@@ -1,0 +1,58 @@
+<html>
+	<meta charset="utf-8">
+	<head>
+		<title>tiny bbs - log in</title>
+		<link href="/css/style.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="masthead">
+			<div class="container">
+				<div class="masthead-logo">
+					tiny bbs
+				</div>
+				<nav class="masthead-nav">
+					<a href="/register.php">Register</a>
+				</nav>
+			</div>
+		</header>
+		
+		<div class="container markdown-body">
+			<h1 class="page-title">Welcome to tiny bbs!</h1>
+			<form method="post" action="/login.php" onSubmit="return InputCheck()">
+				<p>
+					<label for="username">Username :</label>
+					<input class="form-control" id="username" name="username" type="text" />
+				</p>
+				<p>
+					<label for="password">Password :</label>
+					<input class="form-control" id="password" name="password" type="password" />
+				</p>
+				<input class="btn" type="submit" name="submit" value="Login" />
+			</form>
+			<footer class="footer">
+				Designed by Kiddo Zhu
+			</footer>
+		</div>
+	</body>
+</html>
+
+<script>
+function InputCheck()
+{
+	username = document.getElementById("username");
+	password = document.getElementById("password");
+	if (!username.value)
+	{
+		alert("User name should not be empty.");
+		username.focus();
+		return false;
+	}
+	if (!password.value)
+	{
+		alert("Password should not be empty.");
+		password.focus();
+		return false;
+	}
+	return true;
+}
+</script>
