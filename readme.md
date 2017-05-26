@@ -2,7 +2,7 @@
 
 A simple bulletin board system based on PHP and MySQL.
 
-![](https://github.com/KiddoZhu/Tiny-BBS/pic/cover.png)
+![](https://github.com/KiddoZhu/Tiny-BBS/blob/master/pic/cover.png)
 
 ## Features
 - Login system
